@@ -1,9 +1,8 @@
 import pygame
 from Constants import *
 
-class Pacman(pygame.sprite.Sprite):
+class Pacman():
     def __init__(self, x=0, y=0, speed=0):
-        super().__init__()
         self.image = pygame.image.load('Pacman.png')
         self.image = pygame.transform.scale(self.image, (PACMAN_SIZE, PACMAN_SIZE))
         self.posX = x

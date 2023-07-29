@@ -1,9 +1,8 @@
 import pygame
 from Constants import *
 
-class Coin(pygame.sprite.Sprite):
+class Coin():
     def __init__(self, x, y):
-        super().__init__()
         self.posX = x
         self.posY = y
         self.image = pygame.image.load('Coin.png')
